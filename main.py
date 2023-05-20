@@ -83,70 +83,70 @@ async def answer_options(message: types.Message):
 
         treatment = img.filter(ImageFilter.BLUR)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#CONTOUR':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.CONTOUR)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#DETAIL':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.DETAIL)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#EDGE_ENHANCE':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.EDGE_ENHANCE)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#EDGE_ENHANCE_MORE':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.EDGE_ENHANCE_MORE)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#EMBOSS':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.EMBOSS)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#FIND_EDGES':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.FIND_EDGES)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#SMOOTH':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.SMOOTH)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#SMOOTH_MORE':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.SMOOTH_MORE)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
     if message.text == '#SHARPEN':
         img = Image.open('static/photo.png')
 
         treatment = img.filter(ImageFilter.SHARPEN)
         treatment.save('static/modified photo.png')
-        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'))
+        await bot.send_photo(chat_id=message.chat.id, photo=open('static/modified photo.png', 'rb'), reply_markup=kb.keyboard)
 
 
 @dp.message_handler(lambda message: message.text == "Код бота")
